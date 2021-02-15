@@ -8,12 +8,14 @@ bool visited[Max]={false};
 /*
 void dfs(int u)
 {
-    if(!visited[u])
-        cout<<u<<" ";
+    if(visited[u])
+        return;
+
+    cout<<u<<" ";
     visited[u]=true;
+
     for(auto v:adj[u])
-        if(!visited[v])
-            dfs(v);
+        dfs(v);
 }
 */
 
